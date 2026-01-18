@@ -64,8 +64,8 @@ const About = () => {
 
   return (
     <Section id="about" ref={aboutRef}>
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="box bg-secondary rounded-3 p-0 relative overflow-hidden self-start h-full" ref={el => boxRefs.current[0] = el}>
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="box bg-secondary rounded-3 p-0 relative overflow-hidden self-start h-full col-span-2 lg:col-span-1" ref={el => boxRefs.current[0] = el}>
           <div className="spotlight w-[180px] right-0"></div>
           <div className="p-5 relative z-20 flex flex-col gap-5">
             <div className="flex items-center gap-2.5 mb-5 p-2.5 rounded-3" style={{ background: 'rgba(var(--bg-base-rgb), 0.8)' }}>
@@ -88,10 +88,10 @@ const About = () => {
           <CustomIcon name="window" className="kit window absolute bottom-[-10px] right-0 z-10" />
         </div>
 
-        <div className="col-2 box bg-secondary rounded-3 p-0 relative overflow-hidden md:col-span-2" ref={el => boxRefs.current[1] = el}>
+        <div className="col-2 box bg-secondary rounded-3 p-0 relative overflow-hidden col-span-2 lg:col-span-2" ref={el => boxRefs.current[1] = el}>
           <div className="spotlight w-[180px] right-0"></div>
-          <div className="flex flex-col md:flex-row gap-5 p-5 relative z-50">
-            <div className="code__block rounded-3 shadow-sm overflow-hidden h-fit">
+          <div className="flex flex-col lg:flex-row gap-5 p-4 md:p-5 relative z-50">
+            <div className="code__block rounded-3 shadow-sm overflow-hidden h-fit w-full lg:w-auto">
               <div className="flex items-center justify-start h-[50px] px-5 border-b border-solid" style={{ borderColor: 'rgba(212, 175, 55, 0.25)', background: 'rgba(var(--bg-secondary-rgb), 0.6)' }}>
                 <span className="w-3 h-3 min-w-3 min-h-3 max-w-3 max-h-3 rounded-full bg-danger mr-2"></span>
                 <span className="w-3 h-3 min-w-3 min-h-3 max-w-3 max-h-3 rounded-full bg-warning mr-2"></span>
@@ -118,15 +118,15 @@ const About = () => {
           <CustomIcon name="grid-wire-frame" className="kit grid__wireframe absolute bottom-[-10px] right-0 z-10" />
         </div>
 
-        <div className="col-2 box bg-secondary rounded-3 p-0 relative overflow-hidden md:col-span-2" ref={el => boxRefs.current[2] = el}>
-          <div className="cluster p-5 relative z-50 flex flex-col gap-5">
+        <div className="col-2 box bg-secondary rounded-3 p-0 relative overflow-hidden col-span-2 lg:col-span-2" ref={el => boxRefs.current[2] = el}>
+          <div className="cluster p-4 md:p-5 relative z-50 flex flex-col gap-4 md:gap-5">
             <div className="column">
               <h2 className="sub__title">
                 My <span className="primary">Tech Stack</span>
               </h2>
               <p className="description">Always Evolving My Tech Stack</p>
             </div>
-            <div className="column stacks__container grid grid-cols-3 gap-5 pt-5">
+            <div className="column stacks__container grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5 pt-5">
               <div className="flex__center btn stack bg-[rgba(var(--bg-secondary-rgb),0.8)] shadow-sm">
                 <CustomIcon name="react" /> React Native
               </div>
@@ -148,7 +148,7 @@ const About = () => {
           <CustomIcon name="card-ui" className="kit card__ui absolute bottom-[-20px] right-[10px] z-10 w-[200px] h-[200px]" />
         </div>
 
-        <div className="box flex__center last__box bg-secondary rounded-3 p-0 relative overflow-hidden bg-cover bg-no-repeat text-center" style={{ backgroundImage: 'url(/assets/bg1.jpg)' }} ref={el => boxRefs.current[3] = el}>
+        <div className="box flex__center last__box bg-secondary rounded-3 p-0 relative overflow-hidden bg-cover bg-no-repeat text-center col-span-2 lg:col-span-1" style={{ backgroundImage: 'url(/assets/bg1.jpg)' }} ref={el => boxRefs.current[3] = el}>
           <div className="cluster p-5 relative z-50 flex flex-col gap-5">
             <h2 className="text-white sub__title">
               I'm Committed to Collaboration and Clear Communication

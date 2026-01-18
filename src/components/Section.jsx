@@ -11,13 +11,11 @@ const Section = forwardRef(({
     <section 
       id={id} 
       ref={ref}
-      className={`${className} flex justify-center`}
+      className={`${className}`}
       style={style}
       {...props}
     >
-     <div className='max-w-[80%]'> 
       {children}
-     </div>    
     </section>
   );
 });

@@ -80,7 +80,7 @@ const Projects = () => {
             performance, and user experience.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[900px] mx-auto mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 max-w-[900px] mx-auto mt-8 md:mt-16">
           {projects.map((project, index) => (
             <div 
               key={index} 
@@ -90,7 +90,7 @@ const Projects = () => {
               <a href="#" target="_blank" className="picture overflow-hidden">
                 <img src={project.image} alt={project.title} className="transition-all duration-400 hover:scale-110" />
               </a>
-              <div className="flex details flex-col justify-between items-stretch flex-1 p-5">
+              <div className="flex details flex-col justify-between items-stretch flex-1 p-4 md:p-5">
                 <h3 className="line-clamp-1 font-medium text-lg mb-2.5">{project.title}</h3>
                 <p className="text__muted description flex-1 text-base mt-2.5 line-clamp-4">
                   {project.description}

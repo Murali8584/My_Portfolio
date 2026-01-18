@@ -53,10 +53,10 @@ const Contact = () => {
 
   return (
     <Section id="contact" ref={contactRef}>
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div className="left__column">
-          <div className="box bg-secondary shadow-sm rounded-3 relative overflow-hidden mb-8" ref={el => boxRefs.current[0] = el}>
-            <div className="cluster p-5 z-50">
+          <div className="box bg-secondary shadow-sm rounded-3 relative overflow-hidden mb-6 md:mb-8" ref={el => boxRefs.current[0] = el}>
+            <div className="cluster p-4 md:p-5 z-50">
               <h2 className="sub__title">
                 Let's <span className="primary">create something</span> amazing together!
               </h2>
@@ -73,8 +73,8 @@ const Contact = () => {
             style={{ backgroundImage: 'url(/assets/.png)' }}
             ref={el => boxRefs.current[1] = el}
           >
-            <div className="cluster p-5 z-50">
-              <div className="flex items-center gap-2.5 bg-[rgba(var(--bg-secondary-rgb),0.8)] w-fit p-2.5 px-5 my-2.5 rounded-3 hover:[&_.icon__container]:scale-110 hover:[&_.icon__container]:text-text">
+            <div className="cluster p-4 md:p-5 z-50">
+              <div className="flex items-center gap-2.5 bg-[rgba(var(--bg-secondary-rgb),0.8)] w-full md:w-fit p-2.5 px-4 md:px-5 my-2 md:my-2.5 rounded-3 hover:[&_.icon__container]:scale-110 hover:[&_.icon__container]:text-text">
                 <div className="icon__container">
                   <AtSign />
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
           </div>
         </div>
         <form 
-          className="contact__form p-5 w-full bg-secondary shadow-sm rounded-3 overflow-hidden relative" 
+          className="contact__form p-4 md:p-5 w-full bg-secondary shadow-sm rounded-3 overflow-hidden relative" 
           onSubmit={handleSubmit}
           ref={formRef}
         >
@@ -113,46 +113,46 @@ const Contact = () => {
           <h2 className="sub__title">
             Let's work <span className="primary">together!</span>
           </h2>
-          <div className="flex gap-5 justify-between">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-5">
             <input
               type="text"
               placeholder="First name"
               name="firstname"
-              className="control block w-full p-2.5 my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
+              className="control block w-full p-2.5 my-2 md:my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
               style={{ borderColor: 'var(--color-primary)' }}
             />
             <input
               type="text"
               placeholder="Last name"
               name="lastname"
-              className="control block w-full p-2.5 my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
+              className="control block w-full p-2.5 my-2 md:my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
               style={{ borderColor: 'var(--color-primary)' }}
             />
           </div>
 
-          <div className="flex gap-5 justify-between">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-5">
             <input
               type="email"
               placeholder="Email address"
               name="email"
-              className="control block w-full p-2.5 my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
+              className="control block w-full p-2.5 my-2 md:my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
               style={{ borderColor: 'var(--color-primary)' }}
             />
             <input
               type="tel"
               placeholder="Phone number"
               name="phone"
-              className="control block w-full p-2.5 my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
+              className="control block w-full p-2.5 my-2 md:my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[50px] bg-transparent"
               style={{ borderColor: 'var(--color-primary)' }}
             />
           </div>
           <textarea
             name="message"
             placeholder="Message"
-            className="control block w-full p-2.5 my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[130px] bg-transparent"
+            className="control block w-full p-2.5 my-2 md:my-5 rounded-2 text-text text-[15px] overflow-hidden transition-all duration-400 border-2 resize-none h-[130px] bg-transparent"
             style={{ borderColor: 'var(--color-primary)' }}
           ></textarea>
-          <button type="submit" className="btn btn__primary submit__btn block w-fit mx-auto">
+          <button type="submit" className="btn btn__primary submit__btn block w-full md:w-fit mx-auto mt-4">
             Send Now
           </button>
         </form>

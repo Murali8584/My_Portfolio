@@ -81,13 +81,13 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-8 md:mt-12">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div 
                 key={index} 
-                className="service p-12 px-5 rounded-3 overflow-hidden border border-solid backdrop-blur-[50px]" 
+                className="service p-8 md:p-12 px-4 md:px-5 rounded-3 overflow-hidden border border-solid backdrop-blur-[50px]" 
                 style={{ background: 'rgba(var(--bg-secondary-rgb), 0.5)', borderColor: 'rgba(212, 175, 55, 0.25)' }}
                 ref={el => serviceRefs.current[index] = el}
               >

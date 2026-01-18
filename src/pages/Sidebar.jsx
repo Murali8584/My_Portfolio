@@ -22,9 +22,9 @@ const Sidebar = ({ isVisible, onClose }) => {
     >
       <div className="p-4">
         <div className="flex items-center justify-between gap-2.5">
-          <div className="logo">
-            <CustomIcon name="logo" />
-          </div>
+           <div className="logo">
+              <img src="/assets/logo.png" alt="logo" className="w-10 h-10" />
+            </div>
           <div className="icon__container" id="close-sidebar-btn" onClick={onClose}>
             <X />
           </div>

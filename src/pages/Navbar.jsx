@@ -37,9 +37,9 @@ const Navbar = ({ activeSection, onMenuClick }) => {
         borderColor: 'rgba(212, 175, 55, 0.25)'
       }}
     >
-      {/* <div className="logo">
-        <CustomIcon name="logo" />
-      </div> */}
+      <div className="logo">
+        <img src="/assets/logo.png" alt="logo" className="w-10 h-10" />
+      </div>
       <div className="hidden md:flex items-center gap-8">
         {routes.map((route) => (
           <a

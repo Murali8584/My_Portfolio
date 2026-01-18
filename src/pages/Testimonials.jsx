@@ -143,23 +143,23 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div 
-              className="testimonial h-auto max-w-[60%] bg-secondary p-10 shadow-sm rounded-4 relative max-md:max-w-full max-md:p-5"
+              className="testimonial h-auto max-w-[80%] md:max-w-[60%] bg-secondary p-6 md:p-10 shadow-sm rounded-4 relative"
               ref={el => testimonialRefs.current[index] = el}
             >
-              <div className="flex items-center gap-2.5 mb-8">
+              <div className="flex items-center gap-2.5 mb-6 md:mb-8">
                 <div className="profile">
                   <img src={testimonial.image} alt={testimonial.name} />
                 </div>
                 <div className="details">
                   <h3 className="name text-base font-medium">{testimonial.name}</h3>
-                  <div className="flex items-center gap-2.5 max-md:flex-col max-md:items-start max-md:gap-0 max-md:text-left">
+                  <div className="flex flex-col md:flex-row items-start md:items-center gap-0 md:gap-2.5 text-left">
                     <p className="text__muted position">{testimonial.position}</p>
                     <p className="primary company">{testimonial.company}</p>
                   </div>
                 </div>
               </div>
-              <p className="text__muted content text-base mb-5 max-md:text-xs">{testimonial.content}</p>
-              <div className="flex__center stars__container justify-start absolute bottom-10 left-10 max-md:bottom-5 max-md:left-5">
+              <p className="text__muted content text-sm md:text-base mb-4 md:mb-5">{testimonial.content}</p>
+              <div className="flex__center stars__container justify-start absolute bottom-6 left-6 md:bottom-10 md:left-10">
                 {[...Array(5)].map((_, i) => (
                   <CustomIcon key={i} name="star" />
                 ))}
