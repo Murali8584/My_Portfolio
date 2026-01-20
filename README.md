@@ -1,6 +1,6 @@
-# Rear Designer Portfolio - React Version
+# Portfolio - React & GSAP
 
-A modern, responsive portfolio website built with React, featuring animations, dark/light theme, and smooth scrolling sections.
+A modern, responsive portfolio website built with React, GSAP, featuring animations, dark/light theme, and smooth scrolling sections.
 
 ## Features
 

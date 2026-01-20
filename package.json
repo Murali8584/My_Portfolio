@@ -2,7 +2,7 @@
   "homepage": "https://murali8584.github.io/My_Portfolio",
   "name": "murali-portfolio",
   "version": "1.0.0",
-  "description": "Modern portfolio website built with React & GSAP",
+  "description": "This is my portfolio website built with React & GSAP",
   "private": true,
   "dependencies": {
     "gsap": "^3.12.5",
