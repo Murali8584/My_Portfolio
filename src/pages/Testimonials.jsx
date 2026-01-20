@@ -59,42 +59,42 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      image: "/assets/client1.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client1.jpg`,
       name: "Jessica Harper",
       position: "Product Manager",
       company: "TechNova Solutions",
       content: "Emmanuel transformed our website's user experience! His attention to detail and ability to translate our vision into a seamless interface was exceptional. We saw an immediate improvement in user engagement."
     },
     {
-      image: "/assets/client2.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client2.jpg`,
       name: "Mark Thompson",
       position: "CEO",
       company: "Dynamic Designs",
       content: "Working with Emmanuel was a breeze! He's fast, communicative, and his code is always clean and efficient. Our website looks and performs better than ever."
     },
     {
-      image: "/assets/client3.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client3.jpg`,
       name: "Clara Mensah",
       position: "Marketing Director",
       company: "BrightPath Agency",
       content: "Emmanuel's frontend skills took our branding to the next level. He was able to bring our design concepts to life with stunning accuracy and creativity. I highly recommend him!"
     },
     {
-      image: "/assets/client4.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client4.jpg`,
       name: "Samuel Okwuosa",
       position: "CTO",
       company: "Greenline Tech",
       content: "Emmanuel is hands-down one of the best frontend developers I've worked with. His expertise made our site not only look great but perform flawlessly across all devices."
     },
     {
-      image: "/assets/client5.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client5.jpg`,
       name: "Linda Ruiz",
       position: "Co-Founder",
       company: "PixelSpark Creative Studio",
       content: "Emmanuel is incredibly talented. He consistently delivers pixel-perfect designs and smooth user experiences. I appreciate his dedication to excellence and innovation."
     },
     {
-      image: "/assets/client6.jpg",
+      image: `${import.meta.env.BASE_URL}assets/client6.jpg`,
       name: "Tunde Adebayo",
       position: "Lead Developer",
       company: "CodeWave",

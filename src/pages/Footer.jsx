@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-5">
           <div className="col-2 column sm:col-span-2 lg:col-span-2">
             <div className="logo">
-              <img src="/assets/logo.png" alt="logo" className="w-10 h-10" />
+              <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="logo" className="w-10 h-10" />
             </div>
             <p className="text__muted description my-4 md:my-5 text-sm md:text-base leading-relaxed">
               Building scalable mobile and web applications 🚀 with a passion for clean code 💻 

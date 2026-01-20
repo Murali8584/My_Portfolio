@@ -156,10 +156,10 @@ const Header = () => {
       ref={headerRef}
     >
       <div className="spotlight w-1/2 left-1/2 -translate-x-1/2"></div>
-      <div className="container min-h-screen pt-[120px] md:pt-[120px] pt-[80px] overflow-visible">
+      <div className="container min-h-screen pt-[120px] md:pt-[120px] overflow-visible">
         <div className="grid grid-cols-1 md:grid-cols-[400px_auto] gap-8 relative z-10 pb-8">
           <div className="me flex justify-center md:justify-start" ref={meRef}>
-            <img src="/assets/me.png" alt="Murali M" className="w-full max-w-[300px] md:max-w-[400px] mx-auto md:mx-0" />
+            <img src={`${import.meta.env.BASE_URL}assets/me.png`} alt="Murali M" className="w-full max-w-[300px] md:max-w-[400px] mx-auto md:mx-0" />
           </div>
           <div className="user__info" ref={userInfoRef}>
             <h2 className="sub__title text-center md:text-left">Hi 👋, I'm Murali</h2>

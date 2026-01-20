@@ -70,7 +70,7 @@ const About = () => {
           <div className="p-5 relative z-20 flex flex-col gap-5">
             <div className="flex items-center gap-2.5 mb-5 p-2.5 rounded-3" style={{ background: 'rgba(var(--bg-base-rgb), 0.8)' }}>
               <div className="profile">
-                <img src="/assets/me.png" alt="Murali M" />
+                <img src={`${import.meta.env.BASE_URL}assets/me.png`} alt="Murali M" />
               </div>
               <div className="details">
                 <h4 className="font-medium">Murali M</h4>
@@ -148,7 +148,7 @@ const About = () => {
           <CustomIcon name="card-ui" className="kit card__ui absolute bottom-[-20px] right-[10px] z-10 w-[200px] h-[200px]" />
         </div>
 
-        <div className="box flex__center last__box bg-secondary rounded-3 p-0 relative overflow-hidden bg-cover bg-no-repeat text-center col-span-2 lg:col-span-1" style={{ backgroundImage: 'url(/assets/bg1.jpg)' }} ref={el => boxRefs.current[3] = el}>
+        <div className="box flex__center last__box bg-secondary rounded-3 p-0 relative overflow-hidden bg-cover bg-no-repeat text-center col-span-2 lg:col-span-1" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/bg1.jpg)` }} ref={el => boxRefs.current[3] = el}>
           <div className="cluster p-5 relative z-50 flex flex-col gap-5">
             <h2 className="text-white sub__title">
               I'm Committed to Collaboration and Clear Communication

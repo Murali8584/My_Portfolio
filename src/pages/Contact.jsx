@@ -69,8 +69,7 @@ const Contact = () => {
             <CustomIcon name="list-option-ui" className="list__ui absolute z-10 -right-[10px] -bottom-[10px] w-1/2 h-auto" />
           </div>
           <div 
-            className="box bg-secondary shadow-sm rounded-3 relative overflow-hidden bg-cover bg-no-repeat"
-            style={{ backgroundImage: 'url(/assets/.png)' }}
+            className="box bg-secondary shadow-sm rounded-3 relative overflow-hidden"
             ref={el => boxRefs.current[1] = el}
           >
             <div className="cluster p-4 md:p-5 z-50">

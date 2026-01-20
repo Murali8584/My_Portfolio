@@ -6,7 +6,7 @@ const CustomIcon = ({ name, className = "" }) => {
   useEffect(() => {
     if (iconRef.current && name) {
       const request = new XMLHttpRequest();
-      request.open("GET", `/assets/icons/${name}.svg`);
+      request.open("GET", `${import.meta.env.BASE_URL}assets/icons/${name}.svg`);
       request.setRequestHeader("Content-Type", "image/svg+xml");
       request.addEventListener("load", (event) => {
         if (event.target.status === 200) {

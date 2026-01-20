@@ -53,12 +53,12 @@ const Projects = () => {
 
   const projects = [
     {
-      image: "/assets/project1.png",
+      image: `${import.meta.env.BASE_URL}assets/project1.png`,
       title: "Explore Mira – LMS Mobile App",
       description: "A comprehensive learning platform that marked my transition from web to mobile development. Built with React Native, this app handles course management, assignments, online exams, attendance tracking, and real-time notifications. The journey taught me mobile architecture, performance optimization, store requirements, and handling production at scale. Now live on both Google Play Store and Apple App Store, serving real users and supporting structured learning experiences."
     },
     {
-      image: "/assets/project2.png",
+      image: `${import.meta.env.BASE_URL}assets/project2.png`,
       title: "TripEase – Travel Booking Web App",
       description: "A full-stack travel booking application I built as a personal project to explore Spring Boot. Developed backend services with MySQL database, implemented user authentication using Spring Security, and created a clean, responsive UI with client-side validations. This project helped me master Java backend development and understand the full lifecycle of building a production-ready application."
     }
@@ -69,7 +69,7 @@ const Projects = () => {
       id="projects" 
       ref={projectsRef}
       className="bg-[#1a1a1a] bg-cover bg-no-repeat"
-      style={{ backgroundImage: 'url(/assets/bg2.jpg)' }}
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/bg2.jpg)` }}
     >
       <div className="container">
         <div className="section__header text-white" ref={sectionHeaderRef}>
